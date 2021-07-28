@@ -1,0 +1,16 @@
+<p [ngStyle]="{'font-weight': 'bold','font-size': '22px','color': 'brown'}"> 
+  Home Section
+</p><br><br>
+
+<h1>
+  <button style="padding: 4px;" (click)="toggleOn =!toggleOn">{{ toggleOn ? 'Hide Greetings' :'Greetings of the day' }}</button>
+</h1><br><br><br>
+<div *ngIf="toggleOn; else none">
+
+<p style="font-weight: bold;">Good Morning</p><br>
+<p style="font-weight: bold;">Have A Nice Day!</p><br><br><br>
+</div>
+<ng-template #none>
+<h2 style="color: red; ">Welocome To MY APP</h2><br>
+
+</ng-template>

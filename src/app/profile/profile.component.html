@@ -1,0 +1,19 @@
+<p [ngClass]="'profile-section'" [ngStyle]="{'font-weight': 'bold'}">
+  Profile Section
+</p><br><br><br>
+<div class="profile-data">
+  <p style="margin-top:-47px; font-weight: bold;">Customer Details</p>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Email Id</th>
+      <th>Country</th>
+    </tr>
+    <tr *ngFor="let customer of profile">
+      <th>{{ customer.Name }}</th>
+      <th>{{ customer.Email_Id }}</th>
+      <!--<th>{{ customer.Country }}</th>-->
+      <th [ngClass]="{'bgcolor':customer.Country === 'India' || customer.Country ==='China','bgcolor1':customer.Country === 'USA'}">{{ customer.Country }}</th>
+    </tr>
+  </table>
+</div>

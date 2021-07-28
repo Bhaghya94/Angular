@@ -1,0 +1,12 @@
+.img-section{
+    color: limegreen;
+    font-size: 22px;
+}
+@media only screen and (max-width: 767px){
+    .img-section{ 
+        width: 171px;
+    }
+}
+p img{
+    margin-top: 51px;
+}

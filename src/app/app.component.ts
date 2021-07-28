@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'trial';
+
+ /* isActiveTab: boolean;
+
+activeTab(){
+  this.isActiveTab = true;
+}
+
+setClasses(){
+  let myClasses = {
+    active: this.isActiveTab = true
+  }
+  return myClasses;
+}*/
+  
 }

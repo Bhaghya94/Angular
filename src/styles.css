@@ -1,1 +1,95 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Nunito' , 'sans-serif';
+    font-size: 18px;
+}
+*{
+    /*margin: 0;*/
+    padding: 0;
+    list-style: none;
+    text-decoration: none; 
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    background-color: rgb(111, 0, 255);
+    /*padding: 2em 0;*/
+    color: white;
+    font-size: 22px;
+    font-weight: 900;
+    margin: -18px;
+    padding: 33px;
+    width: 100%;
+}
+header nav{
+    float: right;
+}
+header nav img{
+    margin-top: -30px;
+    margin-right: -50px;
+}
+.side-bar{ 
+    left: 0;
+    width: 250px;
+    height: 300px;
+    background: rgb(111, 0, 255);
+}
+@media only screen and (max-width: 767px){
+    .side-bar{ 
+        width: 163px;
+        height: 311px;
+    }
+}
+.side-bar header{
+    color: white;
+    text-align: center;
+    line-height: 0px;
+    font-size: 28px;
+    font-weight: 900;
+    background: rgb(124, 53, 216);
+}
+.side-bar li a{
+    color: white;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 35px;
+    font-size: 20px;
+    padding-left: 40px;
+    padding: 12px 25px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+.side-bar li a:hover{
+    color:black;
+}
+.side-bar li i{
+    margin-right: 10px;
+}
+/*.side-bar li.active{
+background-color: rgba(0,0,0,0.1);
+}*/
+.side-bar p,h1,h2{
+    position: absolute;
+    margin-left: 340px;
+    margin-top: -250px;
+}
+@media only screen and (max-width: 767px){
+    .side-bar p{ 
+        margin-left: 210px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .side-bar h1,h2{ 
+        margin-left: 194px;
+    }
+}
+.list-item.selected{
+    /*background: rgba(1,1,0,0.1);*/
+    background: rgb(19 19 18 / 25%);
+}

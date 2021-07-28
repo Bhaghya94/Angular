@@ -1,0 +1,28 @@
+.profile-section{
+    color: crimson;
+    font-size: 22px;
+}
+table{
+    margin-left: 340px;
+    margin-top: -200px;
+}
+table th{
+    border: 1px solid;
+    padding: 5px;
+}
+@media only screen and (max-width: 767px){
+    table{ 
+        margin-left: 175px;
+    }
+}
+@media only screen and (max-width: 767px){
+    table th{ 
+        padding: 0px;
+    }
+}
+.bgcolor{
+    background-color: aqua;
+}
+.bgcolor1{
+    background-color: red;
+}
