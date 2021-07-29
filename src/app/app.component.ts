@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,17 +9,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'trial';
 
- /* isActiveTab: boolean;
-
-activeTab(){
-  this.isActiveTab = true;
+constructor(router:Router){
+  router.navigate(['/home']);
 }
-
-setClasses(){
-  let myClasses = {
-    active: this.isActiveTab = true
-  }
-  return myClasses;
-}*/
   
 }
